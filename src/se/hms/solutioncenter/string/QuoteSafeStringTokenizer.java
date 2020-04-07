@@ -6,7 +6,7 @@ import java.util.StringTokenizer;
 /**
  * Class that extends StringTokenizer to allow for ignoring delimiters in double quoted strings.
  *
- * @author HMS Networks Inc. Solution Center
+ * @author HMS Networks, MU Americas Solution Center
  * @since 1.0
  */
 public class QuoteSafeStringTokenizer extends StringTokenizer {
