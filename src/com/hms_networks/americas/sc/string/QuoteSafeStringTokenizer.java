@@ -1,4 +1,4 @@
-package se.hms.solutioncenter.string;
+package com.hms_networks.americas.sc.string;
 
 import java.util.NoSuchElementException;
 import java.util.StringTokenizer;
