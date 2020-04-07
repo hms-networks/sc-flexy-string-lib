@@ -5,7 +5,7 @@ package se.hms.solutioncenter.string;
  * <p>
  * Class for building large pre-allocated strings
  *
- * @author HMS Networks Inc. Solution Center
+ * @author HMS Networks, MU Americas Solution Center
  * @since 1.0
  */
 public class PreAllocatedStringBuilder {
