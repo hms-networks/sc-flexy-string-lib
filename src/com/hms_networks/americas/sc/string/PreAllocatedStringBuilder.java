@@ -2,17 +2,15 @@ package com.hms_networks.americas.sc.string;
 
 /**
  * PreAllocatedStringBuilder class
- * <p>
- * Class for building large pre-allocated strings
+ *
+ * <p>Class for building large pre-allocated strings
  *
  * @author HMS Networks, MU Americas Solution Center
  * @since 1.0
  */
 public class PreAllocatedStringBuilder {
 
-  /**
-   * The length, in number of characters, of the string being formed.
-   */
+  /** The length, in number of characters, of the string being formed. */
   private int length = 0;
 
   /**
@@ -21,14 +19,12 @@ public class PreAllocatedStringBuilder {
    */
   private int index = 0;
 
-  /**
-   * The character array forming the string that is being formed.
-   */
+  /** The character array forming the string that is being formed. */
   private final char[] strValue;
 
   /**
-   * Create a new <code>PreAllocatedStringBuilder</code> with the specified number of characters as the
-   * maximum length.
+   * Create a new <code>PreAllocatedStringBuilder</code> with the specified number of characters as
+   * the maximum length.
    *
    * @param numChars maximum string length
    */
@@ -45,9 +41,7 @@ public class PreAllocatedStringBuilder {
     return length;
   }
 
-  /**
-   * Clear the contents of the string by setting the placement index at 0 (start).
-   */
+  /** Clear the contents of the string by setting the placement index at 0 (start). */
   public void clearString() {
     index = 0;
     length = 0;

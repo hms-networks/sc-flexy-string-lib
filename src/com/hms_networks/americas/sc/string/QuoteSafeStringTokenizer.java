@@ -11,26 +11,19 @@ import java.util.StringTokenizer;
  */
 public class QuoteSafeStringTokenizer extends StringTokenizer {
 
-  /**
-   * <code>boolean</code> to track if tokenizer should return the
-   * delimiter as a separate token
-   */
+  /** <code>boolean</code> to track if tokenizer should return the delimiter as a separate token */
   private final boolean returnDelimiters;
 
-  /**
-   * String to hold a local copy of the configured delimiter
-   */
+  /** String to hold a local copy of the configured delimiter */
   private String delimiter = "";
 
-  /**
-   * Index of the last returned token in the string
-   */
+  /** Index of the last returned token in the string */
   private int currTokenIndex = -1;
 
   /**
-   * Creates a new QuoteSafeStringTokenizer for the string <code>str</code>, that should split on the
-   * default delimiter set (space, tab, newline, return and formfeed), and which doesn't return the
-   * delimiters.
+   * Creates a new QuoteSafeStringTokenizer for the string <code>str</code>, that should split on
+   * the default delimiter set (space, tab, newline, return and formfeed), and which doesn't return
+   * the delimiters.
    *
    * @param str The string to split
    * @throws NullPointerException if str is null
@@ -42,7 +35,7 @@ public class QuoteSafeStringTokenizer extends StringTokenizer {
 
   /**
    * Create a new QuoteSafeStringTokenizer, that splits the given string on the given delimiter
-   * characters.  It doesn't return the delimiter characters.
+   * characters. It doesn't return the delimiter characters.
    *
    * @param str the string to split
    * @param delim a string containing all delimiter characters
@@ -56,13 +49,10 @@ public class QuoteSafeStringTokenizer extends StringTokenizer {
 
   /**
    * Create a new QuoteSafeStringTokenizer, that splits the given string on the given delimiter
-   * characters.  If you set
-   * <code>returnDelims</code> to <code>true</code>, the delimiter
-   * characters are returned as tokens of their own.  The delimiter tokens always consist of a
-   * single character. If you set
-   * <code>returnDelims</code> to <code>false</code>, an empty string
-   * will be returned in the case of a delimiter occurring without a token before it and the
-   * previous delimiter.
+   * characters. If you set <code>returnDelims</code> to <code>true</code>, the delimiter characters
+   * are returned as tokens of their own. The delimiter tokens always consist of a single character.
+   * If you set <code>returnDelims</code> to <code>false</code>, an empty string will be returned in
+   * the case of a delimiter occurring without a token before it and the previous delimiter.
    *
    * @param str the string to split
    * @param delim a string containing all delimiter characters
