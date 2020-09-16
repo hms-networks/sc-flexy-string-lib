@@ -1,5 +1,8 @@
 package com.hms_networks.americas.sc.string;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Class providing utilities for working with and manipulating {@link String} objects.
  *
@@ -44,5 +47,35 @@ public class StringUtils {
 
     // Return modified string
     return stringBuffer.toString();
+  }
+
+  /**
+   * Method to split the supplied string into smaller strings using the supplied delimiter.
+   *
+   * @param string string to split
+   * @param delimiter string split delimiter
+   * @return list of string split parts
+   * @since 1.2
+   */
+  public static List split(String string, String delimiter) {
+    // Create array to store string parts
+    ArrayList stringParts = new ArrayList();
+
+    // Create start and end index variables, starting at index 0 (string start)
+    int startIndex = 0;
+    int endIndex = string.indexOf(delimiter, startIndex);
+
+    // Loop while #delimiter is found in string
+    while (endIndex != -1) {
+      String stringPart = string.substring(startIndex, endIndex);
+      stringParts.add(stringPart);
+      startIndex = endIndex + 1;
+      endIndex = string.indexOf(delimiter, startIndex);
+    }
+
+    // Add remaining end of string
+    String endStringPart = string.substring(startIndex);
+    stringParts.add(endStringPart);
+    return stringParts;
   }
 }
