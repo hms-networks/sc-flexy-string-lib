@@ -17,7 +17,7 @@ A library with utility classes for managing and working with Java strings on Ewo
 
 ## [Developer Documentation](#table-of-contents)
 
-Developer documentation is available in Javadoc format at [https://hms-networks.github.io/sc-flexy-string-lib/index.html](https://hms-networks.github.io/sc-flexy-string-lib/index.html).
+Developer documentation is available in Javadoc format found in the release package [https://github.com/hms-networks/sc-flexy-string-lib/releases](https://github.com/hms-networks/sc-flexy-string-lib/releases).
 
 ## [Dependencies](#table-of-contents)
 None
